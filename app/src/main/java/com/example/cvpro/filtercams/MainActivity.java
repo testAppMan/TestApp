@@ -164,12 +164,38 @@ public class MainActivity extends AppCompatActivity
             mOpenCvCameraView.disableView();
     }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        // 메모리 해제
+        if (mOpenCvCameraView != null) mOpenCvCameraView.disableView();
+        if (matInput != null) matInput = null;
+        if (matResult != null) matResult = null;
+        if (mOpenCvCameraView != null) mOpenCvCameraView = null;
+        if (shootingImageBt != null) shootingImageBt = null;
+        if (backBt != null) backBt = null;
+        if (matConverter != null) matConverter = null;
+        if (photoSaveUtils != null) photoSaveUtils = null;
+        if (captureMat != null) captureMat = null;
+        if (saveBitmap != null) saveBitmap = null;
+        if (context != null) context = null;
+    }
+
     public void onDestroy() {
         super.onDestroy();
 
         // 메모리 해제
-        if (mOpenCvCameraView != null)
-            mOpenCvCameraView.disableView();
+        if (mOpenCvCameraView != null) mOpenCvCameraView.disableView();
+        if (matInput != null) matInput = null;
+        if (matResult != null) matResult = null;
+        if (mOpenCvCameraView != null) mOpenCvCameraView = null;
+        if (shootingImageBt != null) shootingImageBt = null;
+        if (backBt != null) backBt = null;
+        if (matConverter != null) matConverter = null;
+        if (photoSaveUtils != null) photoSaveUtils = null;
+        if (captureMat != null) captureMat = null;
+        if (saveBitmap != null) saveBitmap = null;
+        if (context != null) context = null;
     }
 
 
