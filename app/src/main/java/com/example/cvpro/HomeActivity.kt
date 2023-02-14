@@ -27,8 +27,8 @@ class HomeActivity : AppCompatActivity() {
 
         // 이미지 리스너 세팅
         binding.blackCamImg.setOnClickListener { blackCamListener() }
-        binding.cartoonCameraBt.setOnClickListener { cartoonCamListener() }
-        binding.blurCameraBt.setOnClickListener { blurCamListener() }
+        binding.cartoonCamImg.setOnClickListener { cartoonCamListener() }
+        binding.blurCamImg.setOnClickListener { blurCamListener() }
     }
 
 
