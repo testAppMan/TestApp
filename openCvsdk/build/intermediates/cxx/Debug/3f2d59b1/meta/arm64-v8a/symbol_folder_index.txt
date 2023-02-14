@@ -1,0 +1,1 @@
+C:\Users\Argus\AndroidStudioProjects\CvPro\openCvsdk\build\intermediates\cxx\Debug\3f2d59b1\obj\arm64-v8a
